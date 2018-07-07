@@ -1,0 +1,39 @@
+th,td{
+height:100px;
+border: 1px solid black;
+
+text-align:center;
+
+}
+
+table{
+width:500px;
+table-layout:fixed;
+}
+
+board{
+position: absolute;
+top: 50%;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%)
+
+}
+
+.player{
+position: absolute;
+top: 25%;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%)
+}
+
+
+.win{
+position: absolute;
+top: 30%;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%)
+}
+
