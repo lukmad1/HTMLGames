@@ -57,8 +57,10 @@ var counterO = 0;
 
         if(counterX == 3){
           var won = document.getElementById("won").textContent = "Player X WON!";
+        return true;
         }else if(counterO == 3){
           var won = document.getElementById("won").textContent = "Player O WON!";
+        return true;
         }
     }
 
@@ -77,8 +79,10 @@ var counterO = 0;
 
         if(counterX == 3){
           var won = document.getElementById("won").textContent = "Player X WON!";
+        return true;
         }else if(counterO == 3){
           var won = document.getElementById("won").textContent = "Player O WON!";
+        return true;
         }
     }
 
@@ -95,9 +99,12 @@ var counterO = 0;
 
         if(counterX == 3){
           var won = document.getElementById("won").textContent = "Player X WON!";
+        return true;
         }else if(counterO == 3){
           var won = document.getElementById("won").textContent = "Player O WON!";
+            return true;
         }
+
     }
 
         counterO = 0;
@@ -111,14 +118,42 @@ var counterO = 0;
 
         if(counterX == 3){
           var won = document.getElementById("won").textContent = "Player X WON!";
+          return true;
         }else if(counterO == 3){
           var won = document.getElementById("won").textContent = "Player O WON!";
+          return true;
         }
     }
 
+    return false;
+
 }
 
+
+var wasWin = false;
 function play(event){
-fill(event);
-check(player);
+if(!wasWin){
+fill(event)
+wasWin = check(player);
+}
+}
+
+function reset(){
+document.getElementById("0").textContent = "";
+document.getElementById("1").textContent = "";
+document.getElementById("2").textContent = "";
+
+document.getElementById("3").textContent = "";
+document.getElementById("4").textContent = "";
+document.getElementById("5").textContent = "";
+
+document.getElementById("6").textContent = "";
+document.getElementById("7").textContent = "";
+document.getElementById("8").textContent = "";
+
+document.getElementById("won").textContent = "";
+document.getElementById("player").textContent = "X";
+
+wasWin = false;
+player = "X";
 }

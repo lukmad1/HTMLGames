@@ -37,3 +37,11 @@ margin-right: -50%;
 transform: translate(-50%, -50%)
 }
 
+.reset{
+position: absolute;
+top: 70%;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%)
+}
+
