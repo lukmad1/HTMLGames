@@ -1,0 +1,14 @@
+th,td{
+height:100px;
+border: 1px solid black;
+text-align:center;
+}
+
+table{
+width:500px;
+table-layout:fixed;
+}
+
+#mole{
+background-image: url("totallybizar.jpg");
+}
